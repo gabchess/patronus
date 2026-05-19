@@ -1,0 +1,27 @@
+# Monorepo root ignores
+
+# Node
+node_modules/
+*.log
+.DS_Store
+
+# SDK
+sdk/dist/
+sdk/node_modules/
+sdk/*.tgz
+
+# Anchor program
+anchor-program/target/
+anchor-program/.anchor/
+anchor-program/node_modules/
+anchor-program/.yarn/
+anchor-program/test-ledger/
+anchor-program/.anchor/test-ledger/
+
+# IDE
+.vscode/
+.idea/
+
+# Editor
+*.swp
+*.swo
