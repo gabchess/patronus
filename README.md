@@ -39,12 +39,6 @@ anchor-program/   Anchor program (register_agent, attest_scope, revoke)
 sdk/              TypeScript broker SDK (@patronus/sdk on npm)
 ```
 
-## Status
-
-Devnet-targeted build. Submitted to TAIKAI Hackanation 2026.
-
-See submission video and TAIKAI listing for full pitch and demo context.
-
 ## License
 
 MIT
