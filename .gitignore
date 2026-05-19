@@ -25,3 +25,7 @@ anchor-program/.anchor/test-ledger/
 # Editor
 *.swp
 *.swo
+
+# Demo ephemeral files (per-run keypair and state; not committed)
+demo/.demo-agent-keypair.json
+demo/.demo-state.json

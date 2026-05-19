@@ -1,0 +1,15 @@
+{
+  "name": "patronus",
+  "version": "0.1.0",
+  "description": "Patronus: onchain-attested, scoped credentials for AI agents on Solana",
+  "private": true,
+  "scripts": {
+    "demo:setup": "NODE_PATH=./anchor-program/node_modules ./anchor-program/node_modules/.bin/ts-node --transpile-only --project tsconfig.demo.json demo/00-setup.ts",
+    "demo:register": "NODE_PATH=./anchor-program/node_modules ./anchor-program/node_modules/.bin/ts-node --transpile-only --project tsconfig.demo.json demo/01-register-agent.ts",
+    "demo:attest": "NODE_PATH=./anchor-program/node_modules ./anchor-program/node_modules/.bin/ts-node --transpile-only --project tsconfig.demo.json demo/02-attest-scope.ts",
+    "demo:rebalance": "NODE_PATH=./anchor-program/node_modules ./anchor-program/node_modules/.bin/ts-node --transpile-only --project tsconfig.demo.json demo/03-rebalance-success.ts",
+    "demo:revoke": "NODE_PATH=./anchor-program/node_modules ./anchor-program/node_modules/.bin/ts-node --transpile-only --project tsconfig.demo.json demo/04-revoke.ts",
+    "demo:rejected": "NODE_PATH=./anchor-program/node_modules ./anchor-program/node_modules/.bin/ts-node --transpile-only --project tsconfig.demo.json demo/05-rebalance-rejected.ts",
+    "demo:all": "npm run demo:setup && npm run demo:register && npm run demo:attest && npm run demo:rebalance && npm run demo:revoke && npm run demo:rejected"
+  }
+}

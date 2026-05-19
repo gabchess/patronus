@@ -139,7 +139,8 @@ function buildScopedSigner(keypair: Keypair, allowedProgramId: PublicKey): Scope
       // Verify all instructions target the attested program before signing.
       validateTransactionScope(tx, allowedProgramId);
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      (tx as any).sign([keypair]);
+      // Transaction.sign() in @solana/web3.js v1 takes spread signers, not an array.
+      (tx as any).sign(keypair);
       return tx;
     },
   };
